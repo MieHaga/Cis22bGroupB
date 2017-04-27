@@ -14,13 +14,12 @@ using namespace std;
 
 int students[20][4];
 //this will use 20 students for now, with the first name, last name, student number, then gpa
-
+void readfile();
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-  //  std::cout << "Hello, World!\n";
-  //  return 0;
-//print the menu
+
+    void readfile();
+    
     int option;
     cout << "Welcome to the student sorter" << endl <<
             " Please select a option to continue" << endl <<
@@ -50,4 +49,19 @@ int main(int argc, const char * argv[]) {
             cout << "not a valid choice";
             break;
     }
+}
+
+void readfile(){
+    ifstream studentfile;
+    studentfile.open("students.txt");
+    for(int i = 0; i < 19; i++){
+        for(int b = 0; i < 3; i++){
+            studentfile >> students[i][b];
+        }
+    }
+    
+    
+    
+    
+    
 }

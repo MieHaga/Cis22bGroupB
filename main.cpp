@@ -37,6 +37,17 @@ int main(int argc, const char * argv[]) {
         case 1:
             cout << "option 1";
             break;
-        case 2;
+        case 2:
+            cout << "option 2";
+            break;
+        case 3:
+            cout << "option 3";
+            break;
+        case 4:
+            cout << "option 4";
+            break;
+        default:
+            cout << "not a valid choice";
+            break;
     }
 }

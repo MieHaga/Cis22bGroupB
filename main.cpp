@@ -6,6 +6,7 @@
 //  Copyright © 2017 Brandon Aitken. All rights reserved.
 //
 
+#include "studentlist.h"            //Linked list header file
 #include <iostream>
 #include <array>
 #include <fstream>
@@ -50,7 +51,15 @@ int main(int argc, const char * argv[]) {
             break;
     }
     
-    ///////////
+    //Linked List Example
+    StudentList list;
+
+	list.addStudentInfo(01234567, "Mie", "Haga");           //(studentID, FirstName, LastName)
+    list.addStudentInfo(11111111, "Jiayao", "Ye");
+    
+    list.reviseLastName(01234567,  "Ye");                   //Change my last name to "Ye"
+    //end
+    
 }
 
 void readfile(){

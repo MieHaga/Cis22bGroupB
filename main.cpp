@@ -9,6 +9,7 @@
 #include "studentlist.h"            //Linked list header file
 #include <iostream>
 #include <array>
+#include <string>
 #include <fstream>
 
 using namespace std;
